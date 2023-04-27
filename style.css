@@ -1,0 +1,883 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+ font-family: 'Fjalla One', sans-serif;
+ font-family: 'Libre Baskerville', serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+
+}
+header{
+  background: #282828;
+  color: #febd2e;
+  border-bottom: 2px solid rgba(105, 105, 105, 0.2);
+}
+
+.main-header{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+  
+ 
+  
+
+}
+
+.logo{
+  font-size: 2.5rem;
+  font-family: 'Sedgwick Ave Display', cursive;
+  
+  font-weight: 500;
+  flex: 1 1 40rem;
+  
+  
+
+}
+.nav-main{
+  flex: 2 1 40rem;
+  
+}
+.nav-main ul{
+  display: flex;
+  
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.2rem;
+ 
+  
+
+}
+
+.nav-main ul li  {
+  text-align: center;
+}
+.nav-main ul li a{
+  font-size: 1.8rem;
+ 
+  font-family: 'Fjalla One', sans-serif;
+  color: rgb(254,189,46,0.9);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.intro{
+  background: #282828;
+  min-height: 90vh;
+  text-transform: capitalize;
+}
+
+.hero{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  
+  align-items: center;
+}
+
+.intro-text{
+  flex: 2 1 40rem;
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 5rem;
+  padding: 6rem;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  line-height: 5.2rem;
+  color: rgba(254, 189, 46, 0.7);
+  text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
+
+ 
+}
+
+
+
+
+.intro-text p {
+  font-size: 1.6rem;
+  padding-left: 6rem;
+  padding-right: 1rem;
+  color: rgba(228, 225, 225, 0.8);
+  font-family: 'Libre Baskerville', serif;
+  text-align: left;
+  padding-bottom: 2rem;
+  margin-top: -2.5rem;
+
+ 
+}
+
+
+
+.buttons {
+  margin-left: 10rem;
+  margin-top: 1.5rem;
+
+
+}
+
+
+
+.intro-text button{
+  font-size: 1.6rem;
+  padding: 1.2rem 2rem;
+  margin-left: 3.5rem;
+  margin-top: 2.2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+
+}
+
+.btn-menu {
+  background: #282828;
+  border: 0.2rem solid rgba(211, 156, 38, 0.5);
+  color: #fff;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn-menu:hover {
+  background-color: #d49c26;
+}
+
+.btn-order {
+  background-color: rgba(235, 173, 40, 0.7);
+  color: #fff;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn-order:hover {
+  background-color: rgba(33, 33, 33, 0.9);
+  
+}
+
+
+.btn-menu a{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.btn-order a{
+  color: white;
+  font-size: 1.8rem;
+}
+
+
+.intro-image {
+  flex: 1 1 40rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+
+ 
+}
+
+
+.about{
+  background-image: url('./wave.svg');
+  background-size: cover;
+  object-fit: cover;
+}
+.about-us {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about-img{
+  flex: 2 1 40rem;
+}
+
+.about-img img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.about-img img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px dotted rgba(235, 173, 40, 0.7);
+  border-top: none;
+  border-right: none;
+  pointer-events: none;
+}
+
+
+
+.about-text{
+  flex: 3 1 40rem;
+  text-align: center;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  padding: 1.5rem;
+  
+  
+  font-family: 'Fjalla One', sans-serif;
+  color: #fef1d5c6;
+  margin-left: 12rem;
+  font-weight: 500;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.1rem;
+}
+
+.about-text span {
+  font-size: 4rem;
+  font-family: 'Libre Baskerville', serif;
+  background: linear-gradient(to left, rgb(63, 57, 35), rgb(41, 35, 11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgb(141, 116, 16);
+  font-weight: 600;
+  text-shadow: 3px 3px 6px rgba(53, 37, 37, 0.5);
+  
+}
+
+
+.about-text p {
+  padding: 0.6rem 2.5rem;
+  margin-bottom: 1rem;
+  color: #FEF1D5;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-left: 12rem;
+  text-shadow: 4px 6px 8px rgba(5, 5, 5);
+  line-height: 2.2rem;
+
+}
+
+
+
+.icons{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  color: white;
+  
+}
+.icon-burger {
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-left: 1rem;
+  transition: transform 0.3s;
+  
+  
+}
+
+.icon-burger:hover {
+  transform: scale(1.1);
+}
+
+.ico{
+  font-size: 3rem;
+  fill: rgba(20, 18, 21, 0.6);
+}
+
+
+.btn-menu-about{
+  
+  font-size: 1.8rem;
+  background-color: #282828;
+  padding: 1rem 1.5rem;
+  margin-left: 17rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  
+
+}
+
+.btn-menu-about a{
+  color: #FEF1D5;
+}
+
+
+.container {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FEF1D5;
+}
+.container h2{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.container h4{
+  font-size: 1.8rem;
+  color: #FEF1D5;
+  margin-bottom: 3.5rem;
+
+}
+.card h3{
+  font-size: 2rem;
+  
+
+}
+.container p{
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  color: #FEF1D5;
+}
+
+.svg{
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: -0,6rem;
+  margin-top: -2.5rem;
+ 
+
+  
+}
+
+#services {
+  text-align: center;
+  background-color: #282828;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  background-color: rgb(254,189,46, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 4px 6px rgba(219, 214, 214, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card i{
+  margin-top: 1rem;
+  font-size: 3rem;
+  
+  color:rgb(45,36,18);
+}
+
+
+#menu {
+ 
+  background-color: #282828;
+  text-align: center;
+}
+
+.container-menu{
+  width: 90%;
+  margin: auto;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2-menu {
+  font-family: 'Fjalla One', sans-serif;
+  color: #FEF1D5;
+  font-size: 5rem;
+  margin-top: 4.5rem;
+  margin-bottom: 30rem;
+}
+
+.categories-menu {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  margin-right: 3.8rem;
+  
+}
+
+.bonus{
+  margin-bottom: 2rem;
+}
+
+
+
+
+.categories-menu span {
+  
+  margin: 0 1rem;
+  cursor: pointer;
+  margin-top:-26rem;
+  font-family: 'Fjalla One', sans-serif;
+  color: #FEF1D5;
+  font-size: 2rem;
+  margin-left: 4.5rem;
+}
+
+.cards-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: -20rem;
+}
+
+.card-menu {
+ 
+  border-radius: 5px;
+  padding: 1rem;
+  width: calc(25% - 1rem);
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  background-color: rgb(254,189,46, 0.5);
+  
+}
+
+.card-menu img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-menu h3 {
+  margin: 1rem 0;
+}
+
+.card-menu p {
+  margin-bottom: 0;
+}
+
+.h3-menu{
+  font-family: 'Fjalla One', sans-serif;
+  color: #FEF1D5;
+  font-size: 2rem;
+}
+
+.p-menu{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  color: #FEF1D5;
+
+}
+/* .svgs{
+  display: flex;
+  justify-content: space-evenly;
+} */
+/* .svg-menu{
+  width: 16rem;
+  height: 16em;
+  margin-bottom: -12rem;
+} */
+
+.btn-more button{
+  background: #282828;
+  border: 0.2rem solid rgba(211, 156, 38, 0.5);
+  
+ 
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  
+  border-radius: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+.btn-more button a{
+  color: #febd2e;
+  font-weight: 600;
+
+}
+
+.contact-section {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-image {
+  width: 60%;
+  max-width: 120rem;
+  
+  
+}
+
+.contact-image {
+  position: relative;
+  width: 100rem;
+  height: 55rem;
+  margin-left: -20rem;
+  z-index: 0;
+}
+
+.contact-image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom , hsla(46, 48%, 32%, 0.5), rgba(75, 63, 13, 0.3)), linear-gradient(to bottom, rgba(40, 40, 40, 0.4) 30%, rgba(40, 40, 40, 0.4) 90%, #282828);
+  filter: blur(200px);
+  z-index: 2;
+  
+}
+.contact-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%; /* Adjust the height to control the blur effect area */
+  background-image: linear-gradient(to top, #282828, rgba(40, 40, 40, 0));
+  backdrop-filter: blur(1px); /* Adjust the blur value to control the blur intensity */
+  z-index: 1; /* Increase z-index to position above ::before layer */
+}
+
+
+.contact-info {
+  width: 40%;
+  max-width: 800px;
+  color: rgb(148,111,30);
+  margin-right: 4rem;
+}
+
+.contact-info h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: rgb(148,111,30);
+}
+
+.contact-info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info label {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact-info input,
+.contact-info textarea {
+  padding: 1.7rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: #555;
+  color: #FEF1D5;
+  border-radius: 1rem;
+}
+
+.contact-info textarea {
+  height: 12rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+}
+
+.contact-info button {
+  padding: 1.5rem;
+  border: none;
+  background-color: rgb(148,111,30);
+  color: #FEF1D5;
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 50%;
+  margin-left: 12rem
+}
+
+.contact-info button:hover {
+  background-color: rgb(118, 88, 26);
+}
+
+.gallery-section {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color:rgb(254,189,46, 0.7) ;
+}
+
+.gallery-line {
+  width: 50%;
+  margin-bottom: 1.5rem;
+  border: 2px double rgb(250,240,202, 0.3);
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(81, 75, 75, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(196, 196, 12, 0.557) inset;
+  
+}
+
+
+.gallery-item {
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  min-width: 300px;
+  height: 200px;
+  max-height: 300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover:before {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-item {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery-item {
+    width: 80%;
+  }
+}
+
+.testimonials {
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(40, 40, 40);
+  font-family: Arial, sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: rgb(254,189,46, 0.5);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  padding: 3.5rem;
+  background-color: rgba(61, 60, 60, 0.1);
+  border-radius: 2rem;
+  box-shadow: 0 8px 16px 0 rgb(254,189,46, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+  margin-bottom: -6rem;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial img {
+  width: 9rem;
+  height: 8rem;
+  border-radius: 40%;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.testimonial img:hover {
+  filter: brightness(120%);
+}
+
+.testimonial p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #aaa;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.testimonial h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FEF1D5;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+
+footer {
+  background-color: #282828;
+  width: 90%;
+  margin: auto;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 1REM;
+  box-shadow: 0px 5px 10px rgb(254,189,46, 0.5);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex-basis: 28%;
+  text-align: center;
+}
+
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+  margin-bottom: 20px;
+ color: #FEF1D5;
+ font-family: 'Fjalla One', sans-serif;
+ font-size: 2rem;
+
+}
+.footer-center h3{
+  margin-top: 1.5rem;
+}
+.footer-left p{
+  font-size: 1.5rem;
+}
+
+.footer-left p,
+.footer-right ul,
+.footer-center ul {
+  margin-bottom: 18px;
+  color: #FEF1D5;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+
+.footer-right ul li {
+  margin: 5px 0;
+  
+}
+.footer-right ul li{
+  
+}
+
+.footer-center ul li a,
+.footer-right ul li a {
+  color: #FEF1D5;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.4rem;
+}
+.footer-right ul li,.footer-right ul li{
+  color:#FEF1D5 ;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+.footer-center ul li a:hover,
+.footer-right ul li a:hover {
+  color: #FFA500;
+}
+
